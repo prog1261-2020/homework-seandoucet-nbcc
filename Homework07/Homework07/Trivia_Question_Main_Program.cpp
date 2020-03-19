@@ -65,6 +65,7 @@ int main() {
 	char user_responce;
 	std::string user_answer;
 	int category;
+	bool endfile{false};
 
 	std::cout << "PROGRAM EXECUTED..." << std::endl;
 
@@ -117,19 +118,24 @@ int main() {
 			if (category = 1) {
 				data.open("Rick_and_Morty_Question.txt", std::fstream::binary);
 
-				if (data.is_open()) {
-					std::cout << "Data File has been succesfully opened...\n" << std::endl;
 
-					std::string buffer;
+					if (data.is_open()) {
+						std::cout << "Data File has been succesfully opened...\n" << std::endl;
 
-					std::getline(data, buffer);
+						std::string buffer;
 
-					std::cout << question.getQuestion(buffer) << std::endl;
+						while (endfile == false) {
+							for (int loop = 0; loop <= 4; ++loop) {
+								std::getline(data, buffer);
+								std::cout << question.getQuestion(buffer) << std::endl;
+							}
 
-					std::cin >> user_answer;
-					
+							std::getline(data, buffer);
 
-				}
+							std::cin >> user_answer;
+						}
+					}
+
 				else {
 					std::cout << "Data File is not able to be opened..." << std::endl;
 				}
