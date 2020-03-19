@@ -9,12 +9,12 @@ Dog::Dog : Animal(std::string) {
 
 }
 
-void Dog::Speak() {
-
+void Dog::Speak() const{
+	std::cout << "I am a dog..." << std::endl;
 }
 
 void Dog::Move() {
-
+	std::cout << "Cat is moving..." << std::endl;
 }
 
 

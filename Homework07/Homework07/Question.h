@@ -8,7 +8,7 @@
 class Question
 {
 public:
-	Question(int Category);
+	Question();
 	std::string getQuestion();
 private:
 	std::string getAnswer();

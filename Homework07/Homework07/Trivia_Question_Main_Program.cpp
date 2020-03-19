@@ -67,7 +67,9 @@ int main() {
 
 	std::cout << "PROGRAM EXECUTED..." << std::endl;
 
-	std::fstream data;
+	std::ifstream data;
+
+	Question question;
 
 	std::cout << "**********************************************\n" <<
 				 "        Gaming Industries Presents            \n" <<
@@ -116,6 +118,10 @@ int main() {
 
 				if (data.is_open()) {
 					std::cout << "Data File has been succesfully opened...\n" << std::endl;
+
+					std::string temp;
+
+					question.getQuestion(data.read(temp,2));
 					
 
 				}

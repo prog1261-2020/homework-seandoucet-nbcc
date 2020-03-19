@@ -10,6 +10,7 @@ public:
 	Dog(std::string name);
 	int walk();
 	void speak();
+	void Move();
 
 };
 
