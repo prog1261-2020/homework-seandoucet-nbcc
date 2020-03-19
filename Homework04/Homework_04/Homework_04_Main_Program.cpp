@@ -1,9 +1,4 @@
 /*
-Copyright 2020 Sean Doucet
-All Rights Reserved
-*/
-
-/*
 *
 @file
 * @author  Sean Doucet sean.doucet@worldoflinux.ca
@@ -11,7 +6,7 @@ All Rights Reserved
 *
 *
 * @section DESCRIPTION
-*  This is the algorithm project.
+*  This is the quick sort project.
 *
 *
 * @section LICENSE
@@ -39,23 +34,28 @@ All Rights Reserved
 #include <iostream>
 #include <vector>
 
+// Main Program Function
 int main() {
-	std::cout << "PROGRAM Executed..." << std::endl;
+	std::cout << "Program EXECUTED..." << std::endl;
 
 	// Vector Storage
-	std::vector<int> list = { 2, 1, 4, 6, 3, 7 };
+	std::vector<int> list = {5, 2, 7, 4, 3, 6, 1};
+	// Global Variable Storage
+	int size = list.size();
 
 	// Pivot Variable
-	int pivot{0};
+	int firstpivot;
+	int secondpivot;
 
-	// Quicksort Algorithm 
-	list.swap;
+	firstpivot = list.at(0);
+	secondpivot = list.at(6);
 
-	//for (int count = 0; count >= count; ++count) {
-		//list.push_back(1);
-	//}
+	for (int position = 0; position >= size; ++position) {
+		secondpivot = list.at(position);
+		std::cout << secondpivot << std::endl;
+	}
 
-	std::cout << pivot;
-
-	return 0;
+	std::cout << firstpivot << std::endl;
+	std::cout << secondpivot << std::endl;
+	std::cout << size << std::endl;
 }
