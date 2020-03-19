@@ -1,7 +1,4 @@
-/*
-Copyright 2020 Sean Doucet
-All Rights Reserved
-*/
+#pragma once
 
 /*
 *
@@ -11,7 +8,7 @@ All Rights Reserved
 *
 *
 * @section DESCRIPTION
-*  This is the algorithm project.
+*  This is the header file of the Sort class
 *
 *
 * @section LICENSE
@@ -36,26 +33,19 @@ All Rights Reserved
 */
 
 // C++ Standard Library Pre Processor
-#include <iostream>
 #include <vector>
+#include <sstream>
 
-int main() {
-	std::cout << "PROGRAM Executed..." << std::endl;
+class Sort
+{
+public:
+	Sort(std::vector<int> input) : vector(input) {}
 
-	// Vector Storage
-	std::vector<int> list = { 2, 1, 4, 6, 3, 7 };
+	void selectionSort();
+	void bubbleSort();
+	std::stringstream show_List();
 
-	// Pivot Variable
-	int pivot{0};
+private:
+	std::vector<int> vector;
+};
 
-	// Quicksort Algorithm 
-	list.swap;
-
-	//for (int count = 0; count >= count; ++count) {
-		//list.push_back(1);
-	//}
-
-	std::cout << pivot;
-
-	return 0;
-}
