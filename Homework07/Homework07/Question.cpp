@@ -5,8 +5,11 @@
 #include <iostream>
 #include <string>
 
-std::string Question::getQuestion() {
-	return "Question!";
+Question::Question() {}
+
+std::string Question::getQuestion(std::string input) {
+
+	return input;
 }
 
 std::string Question::getAnswer() {

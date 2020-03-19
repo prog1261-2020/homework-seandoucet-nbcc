@@ -63,6 +63,7 @@ int Category() {
 int main() {
 	// Main Program Variables
 	char user_responce;
+	std::string user_answer;
 	int category;
 
 	std::cout << "PROGRAM EXECUTED..." << std::endl;
@@ -119,9 +120,13 @@ int main() {
 				if (data.is_open()) {
 					std::cout << "Data File has been succesfully opened...\n" << std::endl;
 
-					std::string temp;
+					std::string buffer;
 
-					question.getQuestion(data.read(temp,2));
+					std::getline(data, buffer);
+
+					std::cout << question.getQuestion(buffer) << std::endl;
+
+					std::cin >> user_answer;
 					
 
 				}
@@ -134,7 +139,7 @@ int main() {
 
 		case 'Q' :
 		case 'q' :
-
+			return 0;
 			break;
 
 		default :

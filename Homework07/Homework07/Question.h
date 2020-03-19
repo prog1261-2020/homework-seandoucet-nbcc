@@ -9,7 +9,7 @@ class Question
 {
 public:
 	Question();
-	std::string getQuestion();
+	std::string getQuestion(std::string input);
 private:
 	std::string getAnswer();
 	int points;
