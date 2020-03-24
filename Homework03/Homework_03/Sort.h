@@ -34,18 +34,21 @@
 
 // C++ Standard Library Pre Processor
 #include <vector>
+#include <algorithm>
 #include <sstream>
 
 class Sort
 {
 public:
-	Sort(std::vector<int> input) : vector(input) {}
+	Sort();
+	Sort(std::vector<int> input) : list(input) {};
 
+	// Functions for Sorting
 	void selectionSort();
 	void bubbleSort();
 	std::stringstream show_List();
 
 private:
-	std::vector<int> vector;
+	std::vector<int> list;
 };
 

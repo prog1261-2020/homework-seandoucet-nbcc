@@ -7,7 +7,7 @@ class HumanPlayer : public Player
 {
 	HumanPlayer();
 
-	void makeMove() override;
+	int getMove() override;
 	char getPiece();
 };
 

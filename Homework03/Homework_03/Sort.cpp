@@ -34,19 +34,50 @@
 #include "Sort.h"
 
 // C++ Standard Library Pre Processor
+#include <iostream>
 #include <vector>
+#include <algorithm>
 
-Sort::Sort(std::vector<int> input) : vector(input) {}
+Sort::Sort() {}
 
 void Sort::selectionSort() {
+	int size = list.size();
+	int pointer{0};
 
+	int a{0};
+	int b{0};
+
+	for (int count = 0; count < a; count++) {
+
+		for (int count = 0; count < a; count++) {
+		
+		}
+	}
+
+	std::swap(a, b);
 }
 
 void Sort::bubbleSort() {
+	int size = list.size();
 
+	int a{ 0 };
+
+	int count1, count2;
+
+	for (count1 = 0; count1 < size; count1++) {
+		for (count2 = 0; count2 < size; count2++) {
+
+			if (list.at(count2) < list.at(count2 + 1)) {
+				int tmp = list.at(count2);
+			}
+		}
+	}
 }
 
 std::stringstream Sort::show_List()
 {
+	for (int count = 0; list.size(); count++) {
+
+	}
 	return std::stringstream();
 }

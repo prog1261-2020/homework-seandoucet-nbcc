@@ -13,6 +13,7 @@ class Game
 	Player* player[2];
 	bool isPlaying();
 	bool isTie() const;
+	bool isWon() const;
 	std::string getInstructions() const;
 	void nextPlayer();
 	std::string getAnnounceResult() const;
